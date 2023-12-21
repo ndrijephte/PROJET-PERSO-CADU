@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Poppins";
+  src: url(../fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Light.ttf);
+}
+
+$font1: "Poppins";
+$font2: "Roboto";
+
+$color1: #057590;
+$color2: #3e3f3e;
+$black : #181818;
+$white: #f7f7f7;
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: $font1;
+  // background: url(./../img/bg.webp) center/cover;
+}

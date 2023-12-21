@@ -1,0 +1,50 @@
+header {
+  background: url(../img/vue_aerienne.webp) fixed center/cover;
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+
+  nav {
+    display: grid;
+    grid-template-columns: 20% 80%;
+
+    &:hover {
+      background: $white;
+      opacity: 0.80;
+      transition: 1.5s; 
+    }
+
+    img {
+      height: 100px;
+      width: 100;
+      margin-top: 20px;
+      margin-left: 40px;
+      filter: drop-shadow(5px 5px 10px $white);
+    }
+    .nav_right_part {
+      display: flex;
+      flex-direction: column;
+      justify-content: right;
+      align-items: end;
+
+      .socialNetwork ul {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 40px 0;
+
+        .socialNetwork ul li, i {
+          margin-left: 15px;
+        }
+      }
+      .menu ul {
+        display: flex;
+        justify-content: space-between;
+        margin: 50px 40px 0;
+
+        .menu ul li, i {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}

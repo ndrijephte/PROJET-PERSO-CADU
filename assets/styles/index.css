@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "Poppins";
+  src: url(../fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Light.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins";
+}
+
+header {
+  background: url(../img/vue_aerienne.webp) fixed center/cover;
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+}
+header nav {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+header nav:hover {
+  background: #f7f7f7;
+  opacity: 0.8;
+  transition: 1.5s;
+}
+header nav img {
+  height: 100px;
+  width: 100;
+  margin-top: 20px;
+  margin-left: 40px;
+  filter: drop-shadow(5px 5px 10px #f7f7f7);
+}
+header nav .nav_right_part {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: end;
+}
+header nav .nav_right_part .socialNetwork ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 40px 0;
+}
+header nav .nav_right_part .socialNetwork ul .socialNetwork ul li, header nav .nav_right_part .socialNetwork ul i {
+  margin-left: 15px;
+}
+header nav .nav_right_part .menu ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 40px 0;
+}
+header nav .nav_right_part .menu ul .menu ul li, header nav .nav_right_part .menu ul i {
+  margin-left: 20px;
+}/*# sourceMappingURL=index.css.map */
