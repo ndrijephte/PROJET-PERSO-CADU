@@ -25,7 +25,11 @@ li {
   list-style: none;
 }
 
+i {
+  margin-right: 6px;
+}
+
 body {
   font-family: $font1;
-  // background: url(./../img/bg.webp) center/cover;
+  background: url(../../assets/img/plan.png) fixed center/cover;
 }

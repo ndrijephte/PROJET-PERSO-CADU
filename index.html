@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CADU-Consulting, est un cabinet d'appui au développement urbain spécialisée dans Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, nostrum!</title>
+  <title>CADU-Consulting, est un cabinet d'appui au développement urbain spécialisée dans Lorem ipsum dolor sit, amet
+    consectetur adipisicing elit. Minima, nostrum!</title>
 
   <link rel="shortcut icon" href="./assets/img/title.webp">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link rel="stylesheet" href="./assets/styles/index.css">
 </head>
 
@@ -14,12 +16,13 @@
 <body>
   <header>
     <nav>
-      <img src="./assets/img/logo_cadu.webp" alt="Logo de CADU-Consulting">
-      <!-- <div id="logo"></div> -->
+      <div id="logo">
+        <img src="./assets/img/logo_cadu.webp" title="CADU-Consulting" alt="Logo de CADU-Consulting">
+      </div>
       <div class="nav_right_part">
         <div class="socialNetwork">
           <ul>
-            <li>Suivez-nous sur :</li>
+            <li>Suivez-nous sur : </li>
             <li><i class="fa-brands fa-facebook-f"></i></li>
             <li><i class="fa-brands fa-linkedin-in"></i></li>
             <li><i class="fa-brands fa-twitter"></i></li>
@@ -37,7 +40,9 @@
     </nav>
     <div class="firstInfo">
       <h2>Au service du développement</h2>
-      <p><span class="lettrine">L</span>orem ipsum dolor sit amet consectetur adipisicing elit. Eos, rem! Deserunt ipsum odio quasi eos. Natus, tempora illum earum, esse assumenda quidem, accusantium nulla ipsum corporis consequuntur ea at commodi.</p>
+      <p><span class="lettrine">L</span>orem ipsum dolor sit amet consectetur adipisicing elit. Eos, rem! Deserunt ipsum
+        odio quasi eos. Natus, tempora illum earum, esse assumenda quidem, accusantium nulla ipsum corporis consequuntur
+        ea at commodi.</p>
       <button>Poursuivez</button>
     </div>
   </header>
@@ -62,20 +67,33 @@
     </div>
     <div class="partenaires">
       <h1>nos partenaires</h1>
-      <ul>
-        <li><img src="./assets/img/ange_pu.webp" alt="ANGE-PU"></li>
-        <li><img src="./assets/img/alerte_foncier.webp" alt="Alerte foncier"></li>
-        <li><img src="./assets/img/etrabat.webp" alt="Etrabat"></li>
-        <li><img src="./assets/img/bnedt.webp" alt="BNETD"></li>
-        <li><img src="./assets/img/piducas.webp" alt="Alerte foncier"></li>
-      </ul>
+      <marquee behavior="scroll" direction="letf" scrollamount="3">
+        <ul>
+          <li><img src="./assets/img/ange_pu.webp" alt="ANGE-PU"></li>
+          <li><img src="./assets/img/alerte_foncier.webp" alt="Alerte foncier"></li>
+          <li><img src="./assets/img/etrabat.webp" alt="Etrabat"></li>
+          <li><img src="./assets/img/bnedt.webp" alt="BNETD"></li>
+          <li><img src="./assets/img/piducas.webp" alt="Alerte foncier"></li>
+        </ul>
+      </marquee>
     </div>
   </section>
 
   <footer>
     <div class="footer_top">
       <div class="form">
-
+        <h3>
+          Besoin d'une informations ?
+        </h3>
+        <form action="">
+          <input type="text" id="name" autocomplete="off" placeholder="Nom">
+          <input type="text" id="surname" autocomplete="off" placeholder="Prénoms">
+          <input type="text" id="email" placeholder="Email">
+          <textarea id="message" placeholder="Taper votre message"></textarea>
+          <div class="submit-container">
+            <input type="submit" class="btn" value="Envoyer">
+          </div>
+        </form>
       </div>
       <div class="siteResume">
         <h2>Qui sommes-nous ?</h2>
@@ -96,7 +114,6 @@
       </div>
       <div class="socialNetwork2">
         <ul>
-          <li>Suivez-nous sur :</li>
           <li><i class="fa-brands fa-facebook-f"></i></li>
           <li><i class="fa-brands fa-linkedin-in"></i></li>
           <li><i class="fa-brands fa-twitter"></i></li>
@@ -104,6 +121,7 @@
       </div>
     </div>
   </footer>
-  
+
 </body>
+
 </html>

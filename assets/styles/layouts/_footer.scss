@@ -1,0 +1,183 @@
+footer {
+  background: #057490ae;
+  width: 80%;
+  margin: 0 auto;
+  color: $white;
+
+  .footer_top {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    padding: 35px;
+
+    h3 {
+      font-size: 1.3rem;
+      padding-bottom: 5px;
+
+      @media screen and (max-width: 1020px) {
+        font-size: 1rem;
+        }
+    }
+
+    .form {
+      background: #057490db;
+      border: 3px solid $color1;
+      width: 65%;
+      border-radius: 10px;
+      padding: 10px;
+
+      @media screen and (max-width: 1020px) {
+        width: 70%;
+        }
+
+      form {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 40% 1fr;
+        grid-template-rows: 30px 30px 150px ;
+        grid-template-areas: 
+        "nom pnom"
+        "email email"
+        "mess mess";
+
+        @media screen and (max-width: 1020px) {
+          grid-template-rows: 25px 25px 120px ;
+          }
+
+        #name {
+        grid-area: nom;
+        }
+        #surname {
+        grid-area: pnom;
+        }
+        #email {
+        grid-area: email;
+        }
+        #message {
+        grid-area: mess;
+        }
+
+        div input {
+          text-transform: uppercase;
+          color: $color1;
+          font-family: $font1;
+          font-weight: bold;
+          padding: 3px 15px;
+          border: 2.5px solid $white;
+          border-radius: 5px;
+
+          &:hover {
+            background: none;
+            border: 2.5px solid $white;
+            color: $white;
+            cursor: pointer;
+            transition: 0.5s ease;
+          }
+        }
+        
+        input[type="text"],
+        textarea {
+          border: 2.5px solid $color1;
+          border-radius: 5px;
+          padding: 5px;
+          resize: none;
+
+          &:hover {
+            background: none;
+            border: 2.5px solid $white;
+            transition: 0.5s ease;
+            &::placeholder {
+              font-family: $font1;
+              font-size: 0.7rem;
+            }
+          }
+        }
+      }
+    }
+
+    .siteResume {
+      display: flex;
+      flex-direction: column;
+
+      h2 {
+        font-family: $font1, serif;
+        font-size: 1.5rem;
+        font-weight: 800;
+        margin-bottom: 10px;
+
+        @media screen and (max-width: 1020px) {
+          font-size: 1rem;
+          }
+      }
+
+      .menu2 li {
+        line-height: 50px;
+        text-transform: capitalize;
+        cursor: pointer;
+
+        @media screen and (max-width: 1020px) {
+          font-size: 0.7rem;
+          }
+      }
+    }
+  }
+
+  .footer_bottom {
+    font-family: $font1, serif;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0 25px;
+    border-top: 2px dashed $white;
+    width: 80%;
+    margin: 0 auto;
+
+    @media screen and (max-width: 1020px) {
+      font-size: 0.7rem;
+      }
+
+    .copyRight {
+      margin-top: 10px;
+
+      span {
+        color: $color1;
+      }
+    }
+    
+    .socialNetwork2 ul {
+      display: flex;
+      justify-content: space-around;
+      justify-content: center;
+      align-items: center;
+      padding: 0 5px 25px;
+      margin-top: 10px;
+
+      li {
+        font-size: 0.9rem;
+        display: flex;
+        justify-content:center;
+        text-align: center;
+        align-items: center;
+        margin: 0  10px;
+        padding: 6px;
+        border: 1px solid $white;
+        height: 30px;
+        width: 30px;
+        border-radius: 50px;
+        cursor: pointer;
+
+        &:hover {
+          transform: scale(1.2);
+          transition: 0.5s ease;
+          background: $white;
+          color: $color1;
+        }
+
+        i {
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
